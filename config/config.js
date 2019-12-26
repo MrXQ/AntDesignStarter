@@ -4,8 +4,14 @@ export default {
 
         }],
     ],
-    routes: [{
-        path: '/',
-        component: './HelloWorld',
-    }],
+    routes: [
+        {
+            path: '/helloworld',
+            component: './HelloWorld',
+        },
+        {
+            path: '/content',
+            component: './Content',
+        }
+    ],
 };

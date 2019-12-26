@@ -1,17 +1,19 @@
 export default {
     plugins: [
         ['umi-plugin-react', {
-
+            antd: true,
         }],
     ],
     routes: [
         {
-            path: '/helloworld',
-            component: './HelloWorld',
+            path: '/',
+            component: '../layout',
+            routes: [
+                {
+                    path: 'helloworld',
+                    component: './HelloWorld',
+                },
+            ]
         },
-        {
-            path: '/content',
-            component: './Content',
-        }
-    ],
+    ]
 };
